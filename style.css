@@ -184,7 +184,7 @@ main > div.caixa-post {
 	color: #665;
 }
 
-.painel {
+.painel, .painel-destaque {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -192,6 +192,12 @@ main > div.caixa-post {
 
 .painel > div {
 	flex: 0 1 300px;
+	margin: 10px;
+	text-align: left;
+}
+
+.painel-destaque > div {
+	flex: 0 1 600px;
 	margin: 10px;
 	text-align: left;
 }
