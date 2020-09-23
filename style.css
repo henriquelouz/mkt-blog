@@ -43,7 +43,14 @@ nav ul, nav li {
 }
 
 nav li {
-	margin-left: 15px;
+	margin-left: 20px;
+	padding-top:10px;
+}
+
+.active {
+	background-color: #eee;
+	border-radius: 2px;
+	padding:10px;
 }
 
 /* CSS Cabeçalho - Fim */
@@ -55,7 +62,7 @@ nav li {
 	display: none;
 }
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 981px) {
 	main.conteudo {
 		margin-top: 63px;
 	}
@@ -104,6 +111,12 @@ nav li {
 		width: 100%;
 		margin-left: 0px;
 		margin-bottom: 20px;
+		padding-top: 0px;
+	}
+	
+	.active {
+		background-color: transparent;
+		padding:0px;
 	}
 
 	.menu li a, .menu li .titulo-xs {
@@ -190,16 +203,17 @@ main > div.caixa-post {
 	justify-content: center;
 }
 
-.painel > div {
-	flex: 0 1 300px;
+.painel > div, .painel-destaque > div {
 	margin: 10px;
 	text-align: left;
 }
 
-.painel-destaque > div {
+.painel > div {	
+	flex: 0 1 300px;
+}
+
+.painel-destaque > div {	
 	flex: 0 1 600px;
-	margin: 10px;
-	text-align: left;
 }
 
 .divisoria {
