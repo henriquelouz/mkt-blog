@@ -10,6 +10,11 @@ body, ul, li {
 	text-align: justify;
 }
 
+ul.lista {
+	padding-left: 40px;
+	margin-bottom:10px;
+}
+
 img {
 	max-width: 100%;
 	display: block;
