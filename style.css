@@ -1,228 +1,279 @@
 /* CSS Geral - Início */
 
 html {
-	height: 100%;
+  height: 100%;
 }
 
-body, ul, li {
-	margin: 0px;
-	padding: 0px;
-	text-align: justify;
+body,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
 }
 
 ul.lista {
-	padding-left: 40px;
-	margin-bottom:10px;
+  padding-left: 40px;
+  margin-bottom: 10px;
 }
 
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 a {
-	text-decoration: none;
-	color: red;
+  text-decoration: none;
+  color: red;
 }
 
 /* CSS Geral - Fim */
 
 /* CSS Cabeçalho - Início */
 header {
-	background: white;
-	border-bottom: 1px solid black;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header img {
-	width: 70px;
+  width: 70px;
 }
 
-nav ul, nav li {
-	display: flex;
+nav ul,
+nav li {
+  display: flex;
 }
 
 nav li {
-	margin-left: 20px;
-	padding-top:10px;
+  margin-left: 20px;
+  padding-top: 10px;
 }
 
 .active {
-	background-color: #eee;
-	border-radius: 2px;
-	padding:10px;
+  text-decoration: underline;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 10px;
 }
 
 /* CSS Cabeçalho - Fim */
 
-
 /* Menu Mobile - Início */
 
-#menu-toggle, .menu-icon, .titulo-xs {
-	display: none;
+#menu-toggle,
+.menu-icon,
+.titulo-xs {
+  display: none;
+}
+
+@media screen and (max-width: 655px) {
+  .mob-center {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 981px) {
-	main.conteudo {
-		margin-top: 63px;
-	}
+  main.conteudo {
+    margin-top: 63px;
+  }
 
-	header {
-		position: fixed;
-		width: 100%;
-		top: 0px;
-		padding-bottom: 3px;
-	}
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding-bottom: 3px;
+  }
 
-	header nav {
-		display: absolute;
-		width: 100%;
-		height: 100%;
-	}
+  header nav {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
-	header .titulo {
-		display: none;
-	}
+  header .titulo {
+    display: none;
+  }
 
-	header img {
-		width:50px;
-	}
+  header img {
+    width: 50px;
+  }
 
-	.menu {
-		display: flex;
-		position: fixed;
-		flex-wrap: wrap;
-		align-content: center;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		height: 0%;
-		background: rgba(0,0,0,0.9);
-		overflow: hidden;
+  .menu {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
 
-		-webkit-transition: height 0.3s;
-		-moz-transition: height 0.3s;
-		-o-transition: height 0.3s;
-		transition: height 0.3s;
-	}
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+  }
 
-	.menu li {
-		display: block;
-		width: 100%;
-		margin-left: 0px;
-		margin-bottom: 20px;
-		padding-top: 0px;
-	}
-	
-	.active {
-		background-color: transparent;
-		padding:0px;
-	}
+  .menu li {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+  }
 
-	.menu li a, .menu li .titulo-xs {
-		font-size: 1.5em;
-		display: block;
-		text-align: center;
-		width: 100%;
-	}
+  .active {
+    background-color: transparent;
+    padding: 0px;
+  }
 
-	.menu li a{
-		color: white;
-	}
-	
-	.menu li .titulo-xs{
-		color: rgba(255, 255,255, 0.4);
+  .menu li a,
+  .menu li .titulo-xs {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 
-	}
-	
-	.menu-icon {
-		display: block;
-		width: 50px;
-		height: inherit;
-		position: absolute;
-		top: 16px;
-		right: 10px;
-		line-height: 60px;
-		z-index: 1;
-	}
-	
-	.menu-icon i {
-		font-size: 2em;
-	}
+  .menu li a {
+    color: white;
+  }
 
-	label i:nth-child(2) {
-		color: white;
-	}
+  .menu li .titulo-xs {
+    color: rgba(255, 255, 255, 0.4);
+  }
 
-	#menu-toggle:checked ~ label i:nth-child(2) {
-		display:block;
-	}
+  .menu-icon {
+    display: block;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    line-height: 60px;
+    z-index: 1;
+  }
 
-	#menu-toggle:checked ~ label i:first-child {
-		display:none;
-	}
+  .menu-icon i {
+    font-size: 2em;
+  }
 
-	#menu-toggle:not(checked) ~ label i:first-child {
-		display:block;
-	}
+  label i:nth-child(2) {
+    color: white;
+  }
 
-	#menu-toggle:not(checked) ~ label i:nth-child(2) {
-		display:none;
-	}
+  #menu-toggle:checked ~ label i:nth-child(2) {
+    display: block;
+  }
 
-	#menu-toggle:checked ~ ul {
-		height: 100%;
-	}
+  #menu-toggle:checked ~ label i:first-child {
+    display: none;
+  }
+
+  #menu-toggle:not(checked) ~ label i:first-child {
+    display: block;
+  }
+
+  #menu-toggle:not(checked) ~ label i:nth-child(2) {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ ul {
+    height: 100%;
+  }
+
+  .active {
+    border: 0px;
+  }
 }
 
 /* Menu Mobile - Fim */
 
 /* CSS Flexbox - Início */
 main {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 800px;
-	margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 main > div.caixa-post {
-	flex: 0 1 800px;
-	margin: 10px;
-	padding: 30px;
+  flex: 0 1 800px;
+  margin: 10px;
+  padding: 30px;
 }
 
 .subtitulo {
-	text-align:right;
-	margin-bottom: 50px;
-	color: #665;
+  text-align: right;
+  margin-bottom: 50px;
+  color: #665;
 }
 
-.painel, .painel-destaque {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.painel,
+.painel-destaque {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.painel > div, .painel-destaque > div {
-	margin: 10px;
-	text-align: left;
+.painel > div,
+.painel-destaque > div {
+  margin: 10px;
+  text-align: left;
 }
 
-.painel > div {	
-	flex: 0 1 300px;
+.painel > div {
+  flex: 0 1 300px;
 }
 
-.painel-destaque > div {	
-	flex: 0 1 600px;
+.painel-destaque > div {
+  flex: 0 1 600px;
 }
 
 .divisoria {
-	border-top: 1px dashed #ccc;
-	width: 90%;
+  border-top: 1px dashed #ccc;
+  width: 90%;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: lightgray;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.caixa-centro {
+  flex: 0 1 800px;
+}
+
+.centro {
+  text-align: center;
+}
+
+.mob-center {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.assinatura {
+  float: right;
 }
 /* CSS Flexbox - Fim */

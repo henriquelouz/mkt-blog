@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.jpg">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Portfólio - Fundamentos de Marketing</title>
+</head>
+<body>
+	<header>
+		<img src="img/logo.jpg">
+		<h1 class="titulo">Fundamentos de Marketing</h1>
+		<nav>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle" class="menu-icon">
+				<i class="fa fa-bars"></i>
+				<i class="fa fa-times"></i>
+			</label>
+			<ul class="menu">
+				<li><h1 class="titulo-xs">Fundamentos de Marketing</h1></li>
+				<li><a href="index.html">Introdução</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="sobre.html">Sobre mim</a></li>
+				<li class="active"><a href="#">Considerações Finais</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="conteudo">
+		<div class="caixa-centro">
+			<h2 class="titulo">Conclusão</h2>
+			<p class="texto">
+				O curso de Fundamentos de Marketing é de fato essencial para a formação do profissional em Sistemas de Informação. Ele aborda diferentes perspectivas de marketing nas organizações, inclusive como filosofia, raramente mencionado na literatura. O curso também apresenta diversas oportunidades para o aluno ter contato com diversos "cases" de marketing, mostrando os impactos do marketing na história das organizações e propondo reflexões sobre o conteúdo teórico em situações reais.
+			</p>
+			<p class="texto">
+				De uma forma geral, Fundamentos de Marketing é só o início dessa ciência, cabendo a outros programas de graduação aprofundarem nos demais temas. Apesar disso, profissionais de tecnologia que compreendem como e porque uma empresa faz marketing têm o diferencial de terem o marketing como métrica para tomadas de decisão que influenciam em um produto. O conhecimento transmitido pelo curso é de grande proveito e o empenho é gratificante.
+			</p>
+			<p class="texto assinatura">
+				Obrigado!<br>
+				Henrique Louzada
+			</p>
+		</div>
+	</main>
+	<script type="text/javascript">
+		function calculate_age(dob) { 
+			var diff_ms = Date.now() - dob.getTime();
+			var age_dt = new Date(diff_ms); 
+		
+			return Math.abs(age_dt.getUTCFullYear() - 1970);
+		}
+		document.getElementById("idade").innerHTML = calculate_age(new Date(1997, 04, 01));
+	</script>
+</body>
+</html>
