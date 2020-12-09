@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.jpg">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Portfólio - Fundamentos de Marketing</title>
+</head>
+<body>
+	<header>
+		<img src="img/logo.jpg">
+		<h1 class="titulo">Fundamentos de Marketing</h1>
+		<nav>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle" class="menu-icon">
+				<i class="fa fa-bars"></i>
+				<i class="fa fa-times"></i>
+			</label>
+			<ul class="menu">
+				<li><h1 class="titulo-xs">Fundamentos de Marketing</h1></li>
+				<li><a href="index.html">Introdução</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="active"><a href="#">Sobre mim</a></li>
+				<li><a href="consideracoes.html">Considerações Finais</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="conteudo">
+		<div class="caixa-centro">
+			<h2 class="titulo">O Autor</h2>
+			<div class="painel">
+				<div>
+					<img src="img/eu.jpg" alt="capa">
+				</div>
+				<div>
+					<p class="texto">
+						Meu nome é Henrique Almeida Louzada, tenho <span id="idade"></span> anos e sou desenvolvedor desde 2015, quando tinha 17 anos. Comecei cedo pois já tinha um curso técnico que havia feito junto com o ensino médio. Decidi ingressar no curso de Sistemas de Informação da PUC Minas de Contagem por já ter essa experiência, e pelo curso ser noturno e não tão longe da minha casa, assim eu poderia continuar trabalhando de manhã e começaria a estudar à noite.
+					</p>
+					<p class="texto">
+						No entando, devido a algumas turbulências na minha família, não tiveram mais condição de pagar o meu curso, e como não ganhava o suficiente para pagar a mensalidade, tive então que cancelar minha matrícula. Foi então que me mantive no meu emprego e passei a estudar para passar em uma universidade federal. Consegui ser aprovado um ano depois no curso de química da UFMG, e já havia decidido que mudaria de área para dar continuidade a negócios de família que haviam sido interrompidos. Passado um semestre, descobri que aquilo não era pra mim, e minha aptidão já estava clara, pois durante todo esse tempo ainda trabalhava como desenvolvedor.
+					</p>
+				</div>
+			</div>
+			<p class="texto mob-center">
+				Foi então que decidi sair da UFMG e voltar para o curso de Sistemas de Informação da PUC, dessa vez já capaz de pagar meus próprios estudos. Hoje estou a um ano de formar, já participei de atividades de pesquisa e até publiquei um artigo científico no simpósio brasileiro de Interação Humano-Computador. Meu sonho é ser aprovado no mestrado de Ciência da Computação e me tornar um Engenheiro de Dados.
+			</p>
+		</div>
+	</main>
+	<script type="text/javascript">
+		function calculate_age(dob) { 
+			var diff_ms = Date.now() - dob.getTime();
+			var age_dt = new Date(diff_ms); 
+		
+			return Math.abs(age_dt.getUTCFullYear() - 1970);
+		}
+		document.getElementById("idade").innerHTML = calculate_age(new Date(1997, 04, 01));
+	</script>
+</body>
+</html>
